@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export default axios.create({
-  baseURL: 'http://localhost:3001/api/transaction',
+  baseURL: 'https://kauwai-igti-desafio-final.herokuapp.com/api/transaction',
   headers: {
     'Content-type': 'application/json',
   },
