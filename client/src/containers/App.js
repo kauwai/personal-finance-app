@@ -17,7 +17,7 @@ export default function App() {
   const [filteredTransactions, setFilteredTransactions] = useState([{}]);
 
   const fetchTransactions = async () => {
-    const fetchUrl = `http://localhost:3001/api/transaction?period=${selectedValue}`;
+    const fetchUrl = `https://kauwai-igti-desafio-final.herokuapp.com/api/transaction?period=${selectedValue}`;
     const res = await fetch(fetchUrl);
     const jsonResponse = await res.json();
     setTransactions(jsonResponse);
