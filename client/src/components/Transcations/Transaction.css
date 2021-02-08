@@ -1,0 +1,12 @@
+.transaction-card {
+  margin: 10px auto;
+  display: flex;
+  border: 1px solid lightgray;
+  padding: 20px;
+  align-items: center;
+  width: 800px;
+  justify-content: space-between;
+}
+.text-field {
+  margin: 0 40px;
+}
