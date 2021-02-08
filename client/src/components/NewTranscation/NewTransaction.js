@@ -42,6 +42,10 @@ export default function NewTransaction({ onNewTransaction }) {
   const handleSubmit = (event) => {
     event.preventDefault();
     setModalIsOpen(false);
+    const overlapingButtons = Array.from(
+      document.getElementsByClassName('overlap')
+    );
+    overlapingButtons.forEach((button) => button.classList.remove('behind'));
     saveTransaction();
     setNewTransaction(initialTransactionState);
   };
